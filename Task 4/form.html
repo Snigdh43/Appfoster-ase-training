@@ -1,0 +1,320 @@
+<html>
+    <head>
+        <title>
+            Form
+        </title>
+        
+    </head>
+
+
+    <body>
+         <form style="background-color: lightblue; width: 800px; margin-left: 150px; 
+         border: 5px solid #000;" >
+             <fieldset>
+                <legend>Primary Details</legend>
+                <table>
+                    <tr>
+                        <td>Mediocre No</td>
+                        <td>
+                <section>
+                <div style="float: left; margin-right: 10;" >
+                    <label for="Med" style="display: block;"> &emsp;</label>
+                <!-- <label for="Med" style="width: 50;">Mediocre No</label> -->
+                <input type="text" name="Med" id="Med" style="background-color: lightsteelblue;"> / <input type="text" name="Md" size="5">
+                </div>
+                <div style="float: left;">
+                <label for="date" style="display: block;">Valid Till </label>
+                <input type="text" name="date" id="date" >
+                
+                </div>
+                <br style="clear:both;" />
+                 </section>
+                </td>
+                </tr> 
+                <tr>
+                    <td>Title</td>
+                    <td>
+                
+                    <!-- <label for="Simple">
+                        Title &emsp; &emsp; &emsp;
+                    </label> -->
+                    <select id="simple" name="simple">
+                        <option>Mr.</option>
+                        <option selected>None</option>
+                        <option>Mrs.</option>
+                      </select>
+                    
+               
+        </td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>
+            <label style="display: block;" for="Name">Lastname, Firstname, Middlen</label>
+            <input name="Name" id="Name" style="width: 200px;">
+        </td>
+    </tr>
+    <tr>
+        <td>Pref. Name</td>
+        <td>
+            
+            <input name="PName" id="PName">
+        </td>
+    </tr>
+    <tr>
+        <td>DOB</td>
+        <td>
+            <input type="checkbox" name="d" id="d" style="height: 15px; width: 15px; vertical-align: bottom;">
+            <select id="dob" name="dob" style="vertical-align: bottom;">
+                <option>20/5/17</option>
+                <option selected>27/07/18</option>
+                <option>20/08/18</option>
+              </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Sex</td>
+        <td>
+            <input type="radio" name="male" style="vertical-align: bottom;">
+            <label for="male" style="vertical-align: bottom;">Male</label>
+            <input type="radio" name="female" style="vertical-align: bottom;">
+            <label for="female" style="vertical-align: bottom;">Female</label>
+        </td>
+    </tr>
+    <tr>
+        <td>Family Name</td>
+        <td>
+            <input type="text" style="background-color: lightblue; float: left; vertical-align: baseline;" > &emsp;
+            <table  style="float: left; margin-left: 10px;">
+                <tr>
+                    <td style=" border: 1px solid black; max-width: 80px; max-height: 5px; width: 30px; height: 1px; overflow: hidden; word-wrap: break-word; text-align:center ; vertical-align:baseline; background-color: beige;">
+                        <u>N</u>
+                    </td>
+                    <td style=" border: 1px solid black; max-width: 80px; max-height: 5px; width: 30px; height: 1px; overflow: hidden; word-wrap: break-word; text-align:center ; vertical-align:baseline; background-color: beige;">
+                    <u>I</u>
+                    </td>
+                </tr>
+              </table>
+        </td>
+    </tr>
+        </table>
+             </fieldset>
+
+        <fieldset>
+            <legend>Contact Details</legend>
+
+            <table>
+
+                   <tr>
+                    <td>Phone</td>
+                    <td>
+                        <section>
+                            <div style="float: left;">
+                                    <label for="home" style="display: block;">Home</label>
+                                    <input name="home" id="home" type="text">
+                                    
+                            </div>
+                            <div style="float: left;">
+                                     <label for="work" style="display: block;">Work</label>
+                                     <input name="work" id="work" type="text">
+                            </div>
+                        </section>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>&emsp;</td>
+                    <td>
+                        <section>
+                            <div style="float: left;">
+                                    <label for="mobile" style="display: block;">Mobile</label>
+                                    <input name="mobile" id="mobile" type="text">
+                                    
+                            </div>
+                            <div style="float: left;">
+                                     <label for="fax" style="display: block;">Fax</label>
+                                     <input name="fax" id="fax" type="text">
+                            </div>
+                        </section>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>&emsp;</td>
+                    <td>
+                        <section>
+                            <div style="float: left;">
+                                    <label for="next" style="display: block;">Next of Kin</label>
+                                    <input name="next" id="next" type="text">
+                                    
+                            </div>
+                            <div style="float: left;">
+                                     <label for="ph" style="display: block;">Next of Kin Ph:</label>
+                                     <input name="ph" id="ph" type="text">
+                            </div>
+                        </section>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>Emergency No.</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="text" size="30">
+                    </td>
+                   </tr>
+
+            </table>
+
+
+        </fieldset>
+        
+        <fieldset>
+
+        <legend>Address Details</legend>  
+
+        <fieldset>
+
+          <legend>Residential Address</legend>
+          <table>
+           <tr>
+             <td>Address 1</td>
+             <td>
+                <input type="text" size="50">
+             </td>
+
+           </tr>
+           <tr>
+            <td>Address 2</td>
+            <td>
+               <input type="text" size="50">
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>Suburb</td>
+            <td style="  text-align: left;">
+               <input type="text" >
+               <label for="state">State</label>
+               <select name="state">
+                <option>abc</option>
+                <option selected>VIC</option>
+               </select>
+            </td>
+           <tr>
+            <td style="float: left; vertical-align: bottom;">
+                Postal Code
+            </td>
+            <td>
+                <input type="text" size="15" style="float: left;">
+                <table  style="float: left; margin-left: 3px;">
+                    <tr>
+                        <td style=" border: 1px solid black; max-width: 80px; max-height: 5px; width: 30px; height: 1px; overflow: hidden; word-wrap: break-word; text-align:center ; vertical-align:baseline; background-color: beige;">
+                            ?
+                            
+                        </td>
+                        
+                    </tr>
+                  </table>
+                  <label for="country" style="margin-left: 10px; vertical-align: bottom;">Country</label>
+                            <input name="country" value="AUSTRALIA" type="text">
+            </td>
+           </tr>
+
+          </tr>
+
+          </table>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Single Address</legend>
+            <div>Are mailing Address and residential address same? <input type="checkbox"> Yes</div>
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Mailing Address</legend>
+            <table>
+             <tr>
+               <td>Address 1</td>
+               <td>
+                  <input type="text" size="50">
+               </td>
+  
+             </tr>
+             <tr>
+              <td>Address 2</td>
+              <td>
+                 <input type="text" size="50">
+              </td>
+  
+            </tr>
+  
+            <tr>
+              <td>Suburb</td>
+              <td style="  text-align: left;">
+                 <input type="text" >
+                 <label for="state">State</label>
+                 <select name="state">
+                  <option>abc</option>
+                  <option selected>VIC</option>
+                 </select>
+              </td>
+             <tr>
+              <td style="float: left; vertical-align: bottom;">
+                  Postal Code
+              </td>
+              <td>
+                  <input type="text" size="15" style="float: left;">
+                  <table  style="float: left; margin-left: 3px;">
+                      <tr>
+                          <td style=" border: 1px solid black; max-width: 80px; max-height: 5px; width: 30px; height: 1px; overflow: hidden; word-wrap: break-word; text-align:center ; vertical-align:baseline; background-color: beige;">
+                              ?
+                              
+                          </td>
+                          
+                      </tr>
+                    </table>
+                    <label for="country" style="margin-left: 10px; vertical-align: bottom;">Country</label>
+                              <input name="country" value="AUSTRALIA" type="text">
+              </td>
+             </tr>
+  
+            </tr>
+  
+            </table>
+  
+          </fieldset>
+  
+  
+        </fieldset>
+        <table>
+            <tr>
+                <td width="32%" style=" text-align: center; ">IHI Number</td>
+                <td>80036 &emsp;
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td width="32%" style=" text-align: center; ">Number Status</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td width="32%" style=" text-align: center; ">Record Status</td>
+               <td> <input type="text"></td>
+            </tr>
+            <tr>
+                <td width="32%" style=" text-align: center; ">Last Updated</td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+
+        <p style="text-align: center;"><button type="button">Submit</button>&emsp;<button type="button">Clear</button></p>
+         </form>
+
+    </body>
+</html>
