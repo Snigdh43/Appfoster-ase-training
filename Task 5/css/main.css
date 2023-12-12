@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+.container {
+  width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 600px 200px;
+}
+
+body {
+  font-family: PT sans;
+  border: 1px;
+  margin-top: 0px;
+  width: 100%;
+  height: 120%;
+  padding: 0px;
+  border: solid blue;
+  border-width: thin;
+  overflow: hidden;
+  display: block;
+  box-sizing: border-box;
+}
+
+section {
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.left {
+  width: 500px;
+}
+
+.right {
+  float: left;
+}
+
+.left .right {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  padding: 3em;
+}
+
+ul.list {
+  margin: 0;
+  padding-left: 0.1em;
+}
+ul.list li.pro {
+  position: relative;
+  margin-bottom: 3em;
+}
+ul.list li.pro:before {
+  content: "";
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../image/pro.png");
+  background-size: contain;
+  margin-right: 0.5em;
+}
+ul.list li.pro span {
+  color: blue;
+  text-transform: uppercase;
+  font-size: larger;
+}
+ul.list li.pro .des {
+  position: relative;
+  left: -2em;
+}
+ul.list li.Exp {
+  margin-bottom: 3em;
+  position: relative;
+}
+ul.list li.Exp:before {
+  content: "";
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../image/exp.png");
+  background-size: contain;
+  margin-right: 0.5em;
+}
+ul.list li.Exp span {
+  color: blue;
+  text-transform: uppercase;
+  font-size: larger;
+}
+ul.list li.Exp .container2 {
+  width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 500px auto;
+}
+ul.list li.Exp .le {
+  color: black;
+  font-weight: bold;
+  position: relative;
+  left: -2em;
+  margin-top: 1em;
+  font-size: medium;
+  margin-bottom: 0;
+}
+ul.list li.Exp .ri {
+  color: gray;
+  font-size: small;
+  margin-top: 1em;
+}
+ul.list li.Exp .le .ri {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+ul.list li.Exp .b {
+  margin-top: 0;
+  font-size: smaller;
+  color: gray;
+  position: relative;
+  left: -2.5em;
+}
+ul.list li.Exp .para {
+  position: relative;
+  left: -2em;
+}
+ul.list li.proj {
+  position: relative;
+  margin-bottom: 3em;
+}
+ul.list li.proj:before {
+  content: "";
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../image/proj.jpg");
+  background-size: contain;
+  margin-right: 0.5em;
+}
+ul.list li.proj span {
+  color: blue;
+  text-transform: uppercase;
+  font-size: larger;
+}
+ul.list li.proj .Propara {
+  position: relative;
+  left: -2em;
+}
+ul.list li.Skill {
+  position: relative;
+  text-transform: capitalize;
+  color: blue;
+  font-size: larger;
+}
+ul.list li.Skill:before {
+  content: "";
+  left: -2em;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url("../image/skill.jpg");
+  background-size: contain;
+  margin-right: 0.5em;
+}
+ul.list li.Skill span {
+  font-size: unset;
+  text-transform: none;
+  color: black;
+  font-weight: bold;
+  display: block;
+  font-size: small;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  left: -3em;
+}
+ul.list li.Skill .h {
+  border-radius: 10px;
+  content: "";
+  position: absolute;
+  width: 400px;
+  left: 4em;
+  height: 8px;
+  background-color: blue;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 0px;
+}
+ul.list li.Skill .p {
+  border-radius: 10px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  position: absolute;
+  left: 4em;
+}
+ul.list li.Skill .p .lef {
+  content: "";
+  width: 300px;
+  height: 8px;
+  background-color: blue;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 0px;
+}
+ul.list li.Skill .p .rig {
+  content: "";
+  width: 100px;
+  height: 8px;
+  background-color: grey;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 0px;
+}
+
+.up {
+  background-color: navy;
+  position: relative;
+  text-align: center;
+  height: 300px;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 250px;
+  padding-bottom: 0%;
+  display: block;
+}
+.up .con {
+  margin-top: 0;
+  position: relative;
+  text-align: center;
+}
+.up .con img {
+  height: 120px;
+  width: 120px;
+  margin-top: 0.5px;
+  border-radius: 50%;
+  margin-left: 0;
+}
+.up .con blockquote {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.up .con cite {
+  margin-left: 0;
+  align-content: center;
+  color: white;
+  font-size: small;
+}
+
+.down {
+  background-color: blue;
+  position: relative;
+  height: auto;
+  width: 250px;
+  vertical-align: top;
+  display: inline-block;
+  color: white;
+}
+.down ul.list2 {
+  font-size: 13px;
+  position: relative;
+  left: 2em;
+}
+.down ul.list2 a {
+  text-decoration: none;
+  color: white;
+}
+.down ul.list2 li.mail {
+  position: relative;
+  margin-bottom: 1em;
+}
+.down ul.list2 li.mail:before {
+  content: "";
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../image/mail.jpg");
+  background-size: contain;
+  margin-right: 0.5em;
+}
+.down ul.list2 li.phone {
+  position: relative;
+  margin-bottom: 1em;
+}
+.down ul.list2 li.phone:before {
+  content: "";
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../image/phone.jpg");
+  background-size: contain;
+  margin-right: 0.5em;
+}
+.down ul.list2 li.linked {
+  position: relative;
+  margin-bottom: 1em;
+}
+.down ul.list2 li.linked:before {
+  content: "";
+  left: -2.2em;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../image/link.png");
+  background-size: contain;
+  margin-right: 0.5em;
+}
+.down ul.list2 li.git {
+  position: relative;
+  margin-bottom: 1em;
+}
+.down ul.list2 li.git:before {
+  content: "";
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../image/git.png");
+  background-size: contain;
+  margin-right: 0.5em;
+}
+
+.list3 {
+  position: relative;
+  left: 2.2em;
+  margin-top: 0;
+  display: inline-block;
+  padding: 0;
+}
+.list3 span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.list3 p.a {
+  margin-top: 0.8em;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.list3 p.b {
+  color: wheat;
+  font-size: 10px;
+  margin-top: 0px;
+}
+
+.list4 {
+  position: relative;
+  left: 2.2em;
+  margin-top: 0;
+  display: inline-block;
+  padding: 0;
+  text-decoration: none;
+}
+
+.d {
+  font-size: 13px;
+  color: wheat;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+.c {
+  font-size: 14px;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}/*# sourceMappingURL=main.css.map */
