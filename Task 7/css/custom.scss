@@ -1,0 +1,62 @@
+.sec{
+    p.secrow{
+        font-size: 11px;
+    }
+    p.st{
+        font-size: 21px;
+    }
+}
+.frow{
+    font-size: 22px;
+}
+
+@media(max-width:750px){
+#abc{
+   margin-right: 40%;
+    text-align: left;
+   
+}
+.frow{
+    font-size: 20px;
+}
+div{
+    
+    padding-left: 1em;
+}
+.hel{
+    margin-left: 3em;
+}
+.sec{
+    p.secrow{
+        font-size: 9px !important;
+    }
+    p.st{
+        font-size: 18px;
+    }
+}
+
+
+
+}
+@media(max-width:460px){
+    div{
+        max-width: 400px;
+        
+        padding-left: 1em;
+    }
+    .frow{
+    font-size: 17px;
+}
+.car{
+    display: inline-block;
+}
+    .sec{
+        p.secrow{
+            font-size: 8px !important;
+        }
+        p.st{
+            font-size: 16px;
+        }
+    }
+       
+}
