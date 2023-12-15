@@ -23,8 +23,12 @@ btn.addEventListener("click", (event) => {
 
     var di = number / splitNum;
     var count = parseInt(di);
-    var box = count - 1;
-    var extra = number - (splitNum * box);
+    
+    var extra = number - (splitNum * count);
+    if(extra>0){
+        extra=extra+count;
+        splitNum=splitNum-1;
+    }
 
     if (number < splitNum) {
         alert("Wrong number entered");
@@ -32,8 +36,8 @@ btn.addEventListener("click", (event) => {
         if (extra > 0) {
             createColoredBox(extra,number);
         }
-        for (let i = 0; i < box; i++) {
-            createColoredBox(splitNum,number);
+        for (let i = 0; i < splitNum; i++) {
+            createColoredBox(count,number);
         }
     }
 });
