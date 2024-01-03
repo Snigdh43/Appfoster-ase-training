@@ -1,0 +1,27 @@
+Write a sql command 
+
+1. To insert values in customers table.
+INSERT INTO Customers(first_name,last_name,age,country)
+VALUES("khushi","mishra",20,"india");
+
+2. To insert multiple values in customers table.
+INSERT INTO Customers(customer_id,first_name,last_name,age,country)
+VALUES(7,"Snigdha","mishra",20,"india"),(8,"Hanu","mishra",20,"india");
+
+3. To get number of customers per country. 
+SELECT country, COUNT(*) FROM Customers GROUP BY country;
+
+4. To get the orders who have amount between 100 to 500.
+SELECT * FROM Orders 
+WHERE amount BETWEEN 100 AND 500;
+
+5. To get the first name and last name of customers who have bought Mousepad.
+SELECT first_name, last_name FROM Customers WHERE customer_id IN (SELECT customer_id FROM Orders WHERE item="Mousepad");
+
+6. To get the name of the countries where shipping status is Pending.
+SELECT country FROM Customers WHERE customer_id IN (SELECT customer FROM Shippings WHERE status="Pending"); 
+
+7. To get the number of orders per customer.
+SELECT Customers.customer_id, SUM(amount) FROM Customers, Orders
+WHERE Customers.customer_id=Orders.customer_id
+GROUP BY Orders.customer_id;
